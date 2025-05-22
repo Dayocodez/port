@@ -24,7 +24,26 @@ const Portfolio = () => {
     // ... other projects
   ];
 
-  // ... other data (testimonials, skills, stats)
+  // Added testimonials data here to fix the ReferenceError
+  const testimonials = [
+    {
+      name: 'Jane Doe',
+      position: 'CEO, Example Corp',
+      image: 'https://randomuser.me/api/portraits/women/44.jpg',
+      rating: 5,
+      content: 'This team delivered exceptional work and exceeded expectations.',
+    },
+    {
+      name: 'John Smith',
+      position: 'CTO, Tech Innovators',
+      image: 'https://randomuser.me/api/portraits/men/32.jpg',
+      rating: 4,
+      content: 'Professional, efficient, and reliable throughout the project.',
+    },
+    // Add more testimonials as needed
+  ];
+
+  // ... other data (skills, stats) can be added here similarly
 
   return (
     <div className="portfolio-page">
@@ -130,7 +149,6 @@ const Portfolio = () => {
         {/* ... existing stats section code ... */}
       </section>
 
-  
       {/* Call to Action */}
       <section className="py-16 bg-slate-600 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
